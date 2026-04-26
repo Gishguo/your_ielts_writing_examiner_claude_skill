@@ -18,9 +18,8 @@ An AI-powered IELTS Writing assessment skill that runs locally in Claude Code, g
 
 You need a Claude account and Claude Code installed on your machine. | 你需要一个 Claude 账号并在电脑上安装 Claude Code。
 
-### 1. Create a Claude Account | 注册 Claude 账号
-
-If you don't have one yet, sign up at [claude.ai](https://claude.ai). | 如果你还没有账号，前往 [claude.ai](https://claude.ai) 注册。
+### 1. Use LLM from China alternatively | 在大陆就接glm等国内大模型或者用中转站也可以
+If you can't sign in a claude account just like me , you can use GLM or KIMI alternatively
 
 ### 2. Install Claude Code | 安装 Claude Code
 
