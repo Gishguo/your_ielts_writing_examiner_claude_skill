@@ -14,17 +14,67 @@ An AI-powered IELTS Writing assessment skill that runs locally in Claude Code, g
 - Suggests priority actions for improvement | 提供优先改进建议
 - Optionally provides a revised version highlighting changes | 可选提供修改版本并标注改动
 
+## Prerequisites | 前置条件
+
+You need a Claude account and Claude Code installed on your machine. | 你需要一个 Claude 账号并在电脑上安装 Claude Code。
+
+### 1. Create a Claude Account | 注册 Claude 账号
+
+If you don't have one yet, sign up at [claude.ai](https://claude.ai). | 如果你还没有账号，前往 [claude.ai](https://claude.ai) 注册。
+
+### 2. Install Claude Code | 安装 Claude Code
+
+Claude Code is a CLI tool that runs in your terminal. It requires **Node.js 18+**. | Claude Code 是一个在终端中运行的命令行工具，需要 **Node.js 18 及以上版本**。
+
+#### Step 1: Install Node.js (if not already installed) | 安装 Node.js（如未安装）
+
+Download and install from [nodejs.org](https://nodejs.org/). Choose the LTS version. | 从 [nodejs.org](https://nodejs.org/) 下载安装，选择 LTS 版本。
+
+Verify the installation | 验证安装：
+
+```bash
+node --version   # should be v18 or higher | 应为 v18 或更高
+```
+
+#### Step 2: Install Claude Code | 安装 Claude Code
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+If you encounter permission errors on macOS/Linux, use | macOS/Linux 遇到权限问题时使用：
+
+```bash
+sudo npm install -g @anthropic-ai/claude-code
+```
+
+#### Step 3: Authenticate | 登录认证
+
+```bash
+claude
+```
+
+On first launch, Claude Code will open a browser for you to sign in with your Claude account. | 首次启动时，Claude Code 会打开浏览器让你登录 Claude 账号。
+
+> **Tip | 提示:** For more detailed installation instructions, see the [official documentation](https://docs.anthropic.com/en/docs/claude-code/overview). | 更多安装细节请参考[官方文档](https://docs.anthropic.com/en/docs/claude-code/overview)。
+
 ## Quick Start | 快速开始
 
-1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | 安装 [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
-2. Clone this repo into your project or copy the `.claude/skills/` directory | 克隆此仓库或复制 `.claude/skills/` 目录到你的项目
-3. Open Claude Code in the project directory and ask it to grade your essay | 在项目目录中打开 Claude Code，要求它为你的作文评分
+1. Clone this repo | 克隆此仓库：
+   ```bash
+   git clone https://github.com/Gishguo/your_ielts_writing_examiner_claude_skill.git
+   cd your_ielts_writing_examiner_claude_skill
+   ```
+2. Launch Claude Code in the project directory | 在项目目录中启动 Claude Code：
+   ```bash
+   claude
+   ```
+3. Ask Claude to grade your essay | 要求 Claude 为你的作文评分：
+   ```
+   Grade this IELTS Task 2 essay: [paste your essay here]
+   ```
 
-Example prompt | 示例提示：
-
-```
-Grade this IELTS Task 2 essay: [paste your essay here]
-```
+Or, if you already have a project, copy the `.claude/` directory into it — the skill will be automatically available. | 如果你已有项目，将 `.claude/` 目录复制到你的项目中，技能会自动可用。
 
 ## How It Works | 工作原理
 
